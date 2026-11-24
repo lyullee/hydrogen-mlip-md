@@ -1,0 +1,241 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-22T05:43:57.501450+00:00",
+  "software": {
+    "hydrogen-mlip-md": "0.1.0",
+    "numpy": "2.5.4",
+    "ase": "3.29.0",
+    "chgnet": "0.4.2",
+    "torch": "2.14.1"
+  },
+  "config": {
+    "workflow": "md",
+    "model": {
+      "backend": "chgnet",
+      "path": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\work\\models\\chgnet_0.3.0.pth.tar",
+      "device": "cpu",
+      "supported_elements": [
+        "Fe",
+        "H"
+      ],
+      "sha256": "d14ab7c0f093efe64b60a7bcd540bca10e74fb7f46c86108a079af60524659d1",
+      "validation_note": "Execution smoke test only; no material-accuracy validation."
+    },
+    "structures": {
+      "structure": "bulk_h.extxyz"
+    },
+    "options": {
+      "temperature_K": 300,
+      "timestep_fs": 0.25,
+      "equilibration_steps": 20,
+      "production_steps": 200,
+      "sample_interval": 5,
+      "relax_steps": 400,
+      "fmax": 0.05,
+      "seed": 42
+    }
+  },
+  "workflow": "md",
+  "assessment": "Research indicators only; no calibrated embrittlement severity or service-life prediction.",
+  "DFT_executed": false,
+  "run_directory": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\work\\real_smoke_runs\\20261022T054357Z_00344930",
+  "inputs": {
+    "structure": {
+      "path": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\work\\smoke_inputs\\bulk_h.extxyz",
+      "sha256": "76ad9a3fdca348ae716c6de8b259a39730ba82a877f7fe526b78e7ccff3959df",
+      "formula": "HFe16",
+      "atom_count": 17
+    }
+  },
+  "model": {
+    "backend": "chgnet",
+    "path": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\work\\models\\chgnet_0.3.0.pth.tar",
+    "device": "cpu",
+    "supported_elements": [
+      "Fe",
+      "H"
+    ],
+    "sha256": "d14ab7c0f093efe64b60a7bcd540bca10e74fb7f46c86108a079af60524659d1",
+    "validation_note": "Execution smoke test only; no material-accuracy validation.",
+    "element_support_is_user_declared": true,
+    "validation_status": "user_documented"
+  },
+  "result": {
+    "D_m2_s": null,
+    "raw_slope_A2_fs": 0.003158378884026609,
+    "intercept_A2": -0.0056207709273369995,
+    "fit_r2": 0.9571211454698635,
+    "log_log_exponent": 1.2323139366401674,
+    "normal_diffusion_checks_passed": true,
+    "sampling_duration_check_passed": false,
+    "fit_start_fs": 10.0,
+    "fit_end_fs": 25.0,
+    "duration_fs": 50.0,
+    "hydrogen_atoms": 1,
+    "lag_fs": [
+      1.25,
+      2.5,
+      3.75,
+      5.0,
+      6.25,
+      7.5,
+      8.75,
+      10.0,
+      11.25,
+      12.5,
+      13.75,
+      15.0,
+      16.25,
+      17.5,
+      18.75,
+      20.0,
+      21.25,
+      22.5,
+      23.75,
+      25.0
+    ],
+    "msd_A2": [
+      0.000362221647485853,
+      0.0014529438235347859,
+      0.0032642949011543933,
+      0.005777723021590636,
+      0.008961688533507574,
+      0.012771721811858486,
+      0.01713873483747331,
+      0.02196538024307633,
+      0.027145991265053897,
+      0.03255571434703408,
+      0.038032136838057895,
+      0.04340447426958796,
+      0.048510042485904147,
+      0.053200137082131595,
+      0.057349401726352514,
+      0.06083647098182408,
+      0.06354556358883721,
+      0.06544710485104911,
+      0.06656829932411885,
+      0.06690045705764469
+    ],
+    "msd_xyz_A2": [
+      [
+        0.00018976991802351596,
+        5.750424667313051e-05,
+        0.00011494748278920652
+      ],
+      [
+        0.0007607430448530906,
+        0.00023088786977168145,
+        0.0004613129089100138
+      ],
+      [
+        0.0017026116904298844,
+        0.0005181933533889892,
+        0.0010434898573355197
+      ],
+      [
+        0.003000580386380457,
+        0.0009132189763524409,
+        0.0018639236588577383
+      ],
+      [
+        0.004634764679906919,
+        0.0014077746331853346,
+        0.00291914922041532
+      ],
+      [
+        0.006580525876234108,
+        0.001986893688720559,
+        0.0042043022469038195
+      ],
+      [
+        0.008803972962952426,
+        0.002623483859233854,
+        0.005711278015287029
+      ],
+      [
+        0.011255462592581238,
+        0.0032856292809931237,
+        0.007424288369501967
+      ],
+      [
+        0.013863318957486737,
+        0.003961955986215798,
+        0.009320716321351362
+      ],
+      [
+        0.01654916683801912,
+        0.004635892259976282,
+        0.011370655249038682
+      ],
+      [
+        0.01921337861504903,
+        0.005284396994256858,
+        0.013534361228752012
+      ],
+      [
+        0.02174609647941366,
+        0.005895787101156948,
+        0.015762590689017354
+      ],
+      [
+        0.024045487993454184,
+        0.006471363797745121,
+        0.01799319069470484
+      ],
+      [
+        0.026021905213117483,
+        0.007010044999294134,
+        0.020168186869719974
+      ],
+      [
+        0.02759459748550054,
+        0.007512762011561791,
+        0.022242042229290184
+      ],
+      [
+        0.028684248433819365,
+        0.007982583539378958,
+        0.024169639008625753
+      ],
+      [
+        0.02922169298877786,
+        0.008391018845078362,
+        0.025932851754980998
+      ],
+      [
+        0.02916753209582545,
+        0.008765332298007161,
+        0.027514240457216496
+      ],
+      [
+        0.028544968178485033,
+        0.009110971106791209,
+        0.028912360038842618
+      ],
+      [
+        0.027406552120512753,
+        0.00939550408062673,
+        0.03009840085650521
+      ]
+    ],
+    "warnings": [
+      "Element coverage does not prove accuracy for H, vacancies, grain boundaries or fracture configurations.",
+      "Production trajectory is shorter than the 10 ps reporting floor; D is withheld. Longer runs still need duration convergence.",
+      "Fewer than 5 H atoms: repeat independent seeds and check concentration effects.",
+      "Overlapping time origins are correlated; no statistical confidence interval is inferred.",
+      "Mean production temperature differs from target by >20%; D is withheld. Extend equilibration and inspect sampling.",
+      "Check timestep, thermostat friction, cell size and independent-seed convergence before interpreting D."
+    ],
+    "ensemble": "NVT Langevin",
+    "target_temperature_K": 300.0,
+    "mean_temperature_K": 105.02102057177746,
+    "H_atomic_fraction": 0.058823529411764705,
+    "seed": 42,
+    "equilibration_steps": 20,
+    "production_steps": 200,
+    "timestep_fs": 0.25,
+    "friction_fs_inv": 0.002,
+    "temperature_sampling_check_passed": false
+  },
+  "finished_utc": "2026-10-22T05:44:27.517869+00:00"
+}

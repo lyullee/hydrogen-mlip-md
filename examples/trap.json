@@ -1,0 +1,20 @@
+{
+  "model": {
+    "backend": "chgnet",
+    "path": "../models/chgnet_0.3.0.pth.tar",
+    "device": "cpu",
+    "supported_elements": [
+      "Fe",
+      "H"
+    ],
+    "validation_note": ""
+  },
+  "workflow": "trap",
+  "structures": {
+    "bulk": "bulk.extxyz",
+    "bulk_h": "bulk_h.extxyz",
+    "defect": "defect.extxyz",
+    "defect_h": "defect_h.extxyz"
+  },
+  "options": {}
+}

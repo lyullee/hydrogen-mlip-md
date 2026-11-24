@@ -1,0 +1,22 @@
+{
+  "model": {
+    "backend": "chgnet",
+    "path": "../models/chgnet_0.3.0.pth.tar",
+    "device": "cpu",
+    "supported_elements": [
+      "Fe",
+      "H"
+    ],
+    "validation_note": ""
+  },
+  "workflow": "tensile",
+  "structures": {
+    "clean": "bulk.extxyz",
+    "hydrogenated": "bulk_h.extxyz"
+  },
+  "options": {
+    "axis": 2,
+    "max_strain": 0.25,
+    "increments": 25
+  }
+}

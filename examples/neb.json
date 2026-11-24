@@ -1,0 +1,20 @@
+{
+  "model": {
+    "backend": "chgnet",
+    "path": "../models/chgnet_0.3.0.pth.tar",
+    "device": "cpu",
+    "supported_elements": [
+      "Fe",
+      "H"
+    ],
+    "validation_note": ""
+  },
+  "workflow": "neb",
+  "structures": {
+    "start": "bulk_h.extxyz",
+    "end": "neb_end.extxyz"
+  },
+  "options": {
+    "images": 7
+  }
+}

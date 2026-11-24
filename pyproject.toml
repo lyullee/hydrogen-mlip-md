@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hydrogen-mlip-md"
+version = "0.1.1"
+description = "DFT-free MLIP/MD workflows for hydrogen embrittlement research"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "ase>=3.26,<4", "streamlit>=1.40,<2", "pandas>=2,<4"]
+
+[project.optional-dependencies]
+mace = ["mace-torch>=0.3.10,<0.4"]
+chgnet = ["chgnet>=0.3.8,<0.5"]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+hydrogen-lab = "hydrogen_lab.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["hydrogen_lab*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

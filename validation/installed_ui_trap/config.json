@@ -1,0 +1,20 @@
+{
+  "workflow": "trap",
+  "structures": {
+    "bulk": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\examples\\bulk.extxyz",
+    "bulk_h": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\examples\\bulk_h.extxyz",
+    "defect": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\examples\\defect.extxyz",
+    "defect_h": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\examples\\defect_h.extxyz"
+  },
+  "options": {},
+  "model": {
+    "backend": "chgnet",
+    "path": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\models\\chgnet_0.3.0.pth.tar",
+    "device": "cpu",
+    "supported_elements": [
+      "Fe",
+      "H"
+    ],
+    "validation_note": ""
+  }
+}

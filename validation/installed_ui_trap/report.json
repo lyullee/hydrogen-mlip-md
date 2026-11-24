@@ -1,0 +1,92 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-22T06:01:26.689454+00:00",
+  "software": {
+    "hydrogen-mlip-md": "0.1.0",
+    "numpy": "2.5.4",
+    "ase": "3.29.0",
+    "chgnet": "0.4.2",
+    "torch": "2.14.1"
+  },
+  "config": {
+    "workflow": "trap",
+    "structures": {
+      "bulk": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\examples\\bulk.extxyz",
+      "bulk_h": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\examples\\bulk_h.extxyz",
+      "defect": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\examples\\defect.extxyz",
+      "defect_h": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\examples\\defect_h.extxyz"
+    },
+    "options": {},
+    "model": {
+      "backend": "chgnet",
+      "path": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\models\\chgnet_0.3.0.pth.tar",
+      "device": "cpu",
+      "supported_elements": [
+        "Fe",
+        "H"
+      ],
+      "validation_note": ""
+    }
+  },
+  "workflow": "trap",
+  "assessment": "Research indicators only; no calibrated embrittlement severity or service-life prediction.",
+  "DFT_executed": false,
+  "run_directory": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\runs\\20261022T060126Z_6769f664",
+  "inputs": {
+    "bulk": {
+      "path": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\examples\\bulk.extxyz",
+      "sha256": "cf7b52184d55fdc15121ba65cb9e44192b44fd7719acff704869e4c94999c4f9",
+      "formula": "Fe54",
+      "atom_count": 54
+    },
+    "bulk_h": {
+      "path": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\examples\\bulk_h.extxyz",
+      "sha256": "665b04b17432cadf6a7c052b68b971368485130a61e0b02d9a284dbc6addc638",
+      "formula": "HFe54",
+      "atom_count": 55
+    },
+    "defect": {
+      "path": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\examples\\defect.extxyz",
+      "sha256": "8bbb34438e272f9eb5a67328b78ef841ebdd23c358ada323e4f44292a5a11053",
+      "formula": "Fe53",
+      "atom_count": 53
+    },
+    "defect_h": {
+      "path": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\examples\\defect_h.extxyz",
+      "sha256": "c47e183273ba2d88f183c268660eec277587cbd40b49658d2700e7dabff03684",
+      "formula": "HFe53",
+      "atom_count": 54
+    }
+  },
+  "model": {
+    "backend": "chgnet",
+    "path": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\outputs\\hydrogen-mlip-md\\models\\chgnet_0.3.0.pth.tar",
+    "device": "cpu",
+    "supported_elements": [
+      "Fe",
+      "H"
+    ],
+    "validation_note": "",
+    "cpu_threads": 2,
+    "sha256": "d14ab7c0f093efe64b60a7bcd540bca10e74fb7f46c86108a079af60524659d1",
+    "element_support_is_user_declared": true,
+    "validation_status": "unvalidated"
+  },
+  "result": {
+    "trapping_energy_eV": 0.194488525390625,
+    "energies_eV": {
+      "bulk": -451.21600341796875,
+      "bulk_h": -454.72088623046875,
+      "defect": -441.9872131347656,
+      "defect_h": -445.68658447265625
+    },
+    "sign_convention": "positive = favorable trapping relative to supplied bulk site",
+    "warnings": [
+      "Element coverage does not prove accuracy for H, vacancies, grain boundaries or fracture configurations.",
+      "0 K fixed-cell energy difference; no zero-point or entropy correction.",
+      "Inspect relaxed H positions: migration out of the intended site changes the interpretation.",
+      "Positive trapping alone does not establish reduced or increased embrittlement."
+    ]
+  },
+  "finished_utc": "2026-10-22T06:01:54.043528+00:00"
+}

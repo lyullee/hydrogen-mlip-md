@@ -1,0 +1,24 @@
+{
+  "model": {
+    "backend": "chgnet",
+    "path": "../models/chgnet_0.3.0.pth.tar",
+    "device": "cpu",
+    "supported_elements": [
+      "Fe",
+      "H"
+    ],
+    "validation_note": ""
+  },
+  "workflow": "md",
+  "structures": {
+    "structure": "bulk_h.extxyz"
+  },
+  "options": {
+    "temperature_K": 600,
+    "timestep_fs": 0.5,
+    "equilibration_steps": 2000,
+    "production_steps": 20000,
+    "sample_interval": 10,
+    "seed": 42
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "workflow": "md",
+  "model": {
+    "backend": "chgnet",
+    "path": "C:\\Users\\lyul\\Documents\\Codex\\2026-10-22\\https-github-com-lyullee-hydrogen-local\\work\\models\\chgnet_0.3.0.pth.tar",
+    "device": "cpu",
+    "supported_elements": [
+      "Fe",
+      "H"
+    ],
+    "sha256": "d14ab7c0f093efe64b60a7bcd540bca10e74fb7f46c86108a079af60524659d1",
+    "validation_note": "Execution smoke test only; no material-accuracy validation."
+  },
+  "structures": {
+    "structure": "bulk_h.extxyz"
+  },
+  "options": {
+    "temperature_K": 300,
+    "timestep_fs": 0.25,
+    "equilibration_steps": 20,
+    "production_steps": 200,
+    "sample_interval": 5,
+    "relax_steps": 400,
+    "fmax": 0.05,
+    "seed": 42
+  }
+}
